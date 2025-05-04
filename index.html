@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO2 Tracker</title>
+
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Table CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-table/dist/bootstrap-table.min.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- meine CSS-Datei -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <!-- LOGO und href hier noch befüllen!! -->
+            <a class="navbar-brand me-auto d-flex align-items-center" href="index.html">
+                <img src="assets/logo_co2_tracker.png" alt="CO₂ Tracker Logo" width="40" height="40"
+                    class="d-inline-block me-2">
+                <span>CO₂ Tracker</span>
+            </a>
+            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">CO₂ Tracker</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <!-- href hier noch überall befüllen!! -->
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Startseite</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">Über uns</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">Neuigkeiten</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">Projekte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column">
+            <h1>Wer stößt wie viel CO₂ aus?</h1>
+            <h2>Finde heraus, welche Länder und Unternehmen am meisten CO₂ ausstoßen.</h2>
+        </div>
+    </section>
+    <!-- EndHero Section -->
+
+    <!-- Table -->
+    <div class="table-block1 container mt-5">
+        <h1>CO₂ Emissionen</h1>
+        <table id="emissionsTable" class="table table-bordered table-striped table-responsive">
+            <thead>
+                <tr class="bg-info">
+                    <th>Land</th>
+                    <th>Unternehmen</th>
+                    <th>Emissionen</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Tabelle wird dynamisch erzeugt -> JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <!-- Ende Tabelle -->
+
+    <!-- Bootstrap JavaScript Bundle (inkl. Popper)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Table JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-table/dist/bootstrap-table.min.js"></script>
+
+    <!-- meine JS-Datei -->
+    <script src="scripts/table.js"></script>
+</body>
+
+<footer class="custom-footer text-white pt-4 pb-4">
+    <div class="container text-center">
+
+        <!-- Erste Zeile: Kontaktdaten -->
+        <p class="mb-1">
+            CO2 Tracker | x_Straße_x 171 | 89039 Köln | 08557 238491247 | x_E-Mail_x
+        </p>
+
+        <!-- Zweite Zeile: Impressum/Datenschutz -->
+        <p class="mb-3">
+            <a href="https://www.co2tracker.de/impressum" class="footer-link">Impressum</a> |
+            <a href="https://www.co2tracker.de/datenschutz" class="footer-link">Datenschutz</a>
+        </p>
+
+        <!-- Dritte Zeile: Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
+
+        </div>
+
+        <!-- Trennlinie -->
+        <hr class="footer-line">
+
+        <div class="row align-items-center">
+
+            <!-- Copyright-Zeile -->
+            <div class="copyright">
+                <p>Copyright ©2025 CO₂ Tracker
+                </p>
+
+
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+</html>

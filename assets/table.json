@@ -1,0 +1,27 @@
+[
+    {
+        "land": "Deutschland",
+        "unternehmen": "Audi AG",
+        "emissionen": 2000
+    },
+    {
+        "land": "Deutschland",
+        "unternehmen": "Mercedes",
+        "emissionen": 3000
+    },
+    {
+        "land": "Deutschland",
+        "unternehmen": "BMW",
+        "emissionen": 1000
+    },
+    {
+        "land": "China",
+        "unternehmen": "BYD",
+        "emissionen": 5000
+    },
+    {
+        "land": "China",
+        "unternehmen": "Neo",
+        "emissionen": 3000
+    }
+]
