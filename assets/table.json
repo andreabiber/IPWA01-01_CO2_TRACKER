@@ -1,27 +1,13 @@
 [
-    {
-        "land": "Deutschland",
-        "unternehmen": "Audi AG",
-        "emissionen": 2000
-    },
-    {
-        "land": "Deutschland",
-        "unternehmen": "Mercedes",
-        "emissionen": 3000
-    },
-    {
-        "land": "Deutschland",
-        "unternehmen": "BMW",
-        "emissionen": 1000
-    },
-    {
-        "land": "China",
-        "unternehmen": "BYD",
-        "emissionen": 5000
-    },
-    {
-        "land": "China",
-        "unternehmen": "Neo",
-        "emissionen": 3000
-    }
+    {"land": "Luxemburg", "unternehmen": "ArcelorMittal", "emissionen": 207},
+    {"land": "Deutschland", "unternehmen": "RWE", "emissionen": 167},
+    {"land": "Frankreich", "unternehmen": "GDF Suez", "emissionen": 142},
+    {"land": "Deutschland", "unternehmen": "E.on", "emissionen": 121},
+    {"land": "Italien", "unternehmen": "Enel", "emissionen": 116},
+    {"land": "Schweiz", "unternehmen": "Holcim", "emissionen": 97},
+    {"land": "Frankreich", "unternehmen": "Lafarge", "emissionen": 89},
+    {"land": "Niederlande", "unternehmen": "Royal Dutch Shell", "emissionen": 83},
+    {"land": "Südkorea", "unternehmen": "Posco", "emissionen": 77},
+    {"land": "Südafrika", "unternehmen": "Sasol", "emissionen": 68}
 ]
+

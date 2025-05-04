@@ -34,7 +34,7 @@ async function loadTableData() {
 
 function updateTable(data) {
     const tableBody = document.querySelector("#emissionsTable tbody");
-    tableBody.innerHTML = "";
+    tableBody.textContent = "";
 
     const fragment = document.createDocumentFragment();
 
@@ -42,18 +42,26 @@ function updateTable(data) {
         const row = document.createElement("tr");
         row.dataset.land = land;
         row.dataset.unternehmen = unternehmen;
-        
-        row.innerHTML = `
-            <td>${land}</td>
-            <td>${unternehmen}</td>
-            <td>${emissionen}</td>
-        `;
+
+        const landCell = document.createElement("td");
+        landCell.textContent = land;
+
+        const unternehmenCell = document.createElement("td");
+        unternehmenCell.textContent = unternehmen;
+
+        const emissionenCell = document.createElement("td");
+        emissionenCell.textContent = emissionen;
+
+        row.appendChild(landCell);
+        row.appendChild(unternehmenCell);
+        row.appendChild(emissionenCell);
 
         fragment.appendChild(row);
     });
 
     tableBody.appendChild(fragment);
 }
+
 
 function setupSorting() {
     const tableHeaders = document.querySelectorAll("#emissionsTable thead th");
@@ -81,7 +89,7 @@ function sortTable(columnIndex, order) {
             : aValue.localeCompare(bValue, "de", { numeric: true }) * order;
     });
 
-    tableBody.innerHTML = "";
+    tableBody.textContent = "";
     rows.forEach((row) => tableBody.appendChild(row));
 }
 
@@ -92,7 +100,7 @@ function setupFilters(data) {
     filters.forEach((filter, index) => {
         const header = tableHeaders[index];
         const filterButton = document.createElement("span");
-        filterButton.innerHTML = " &#9662;";
+        filterButton.textContent = "▼";
         filterButton.style.cursor = "pointer";
         filterButton.style.marginLeft = "5px";
         filterButton.addEventListener("click", (event) => showFilterPopup(event, filter, data, filterButton));
