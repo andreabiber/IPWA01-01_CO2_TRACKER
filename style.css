@@ -59,11 +59,9 @@
     visibility: visible;
 }
 
-
 .offcanvas-title {
     color: #4D5C1C;
 }
-
 
 
 /* Hero Section */
@@ -86,8 +84,6 @@
     z-index: 0;
 }
 
-
-/* Neues Verhalten: Begrenzung & Zentrierung trotz container-fluid */
 .hero-container {
     display: flex;
     flex-direction: row;
@@ -101,7 +97,6 @@
     padding: 2rem;
 }
 
-/* Navigation (links auf großen Screens, oben auf kleinen) */
 .local-nav {
     flex: 1;
     max-width: 300px;
@@ -110,6 +105,7 @@
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
+
 
 /* Textbereich */
 .hero-text {
@@ -124,12 +120,24 @@
     color: white;
 }
 
+body {
+    position: relative;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
 #table {
     scroll-margin-top: 100px;
     /* 80px entspricht der Höhe der globalen Navigation */
 }
 
-/* Textbereich - Datenschutz und Impressum */
+#klimawandel {
+    scroll-margin-top: 100px;
+}
+
+/* Textbereich - Datenschutz und Impressum - SCROLL MARGIN TOP */
 #datenschutz {
     scroll-margin-top: 100px;
 }
@@ -143,6 +151,49 @@ main h2 {
     margin-bottom: 1rem;
 }
 
+/* Kontakt - SCROLL MARGIN TOP */
+#kontaktformular {
+    scroll-margin-top: 100px;
+}
+
+#fragen {
+    scroll-margin-top: 100px;
+}
+
+/* Neuigkeiten - SCROLL MARGIN TOP */
+
+#veranstaltungen {
+    scroll-margin-top: 100px;
+}
+
+#kooperationen {
+    scroll-margin-top: 100px;
+}
+
+/* Projekte - SCROLL MARGIN TOP */
+
+#klimaworkshop {
+    scroll-margin-top: 100px;
+}
+
+#energiespar-check {
+    scroll-margin-top: 100px;
+}
+
+/* Über uns - SCROLL MARGIN TOP */
+
+#team {
+    scroll-margin-top: 100px;
+}
+
+#entstehung {
+    scroll-margin-top: 100px;
+}
+
+#vision {
+    scroll-margin-top: 100px;
+}
+
 /* Responsives Design */
 
 @media (max-width: 768px) {
@@ -154,11 +205,8 @@ main h2 {
 
     .local-nav {
         flex: 0 0 auto;
-        /* verhindert Strecken durch Flexbox */
         width: auto;
-        /* volle Breite im mobilen Layout */
         height: auto;
-        /* Höhe richtet sich nach Inhalt */
         max-width: 100%;
         margin-top: 120px;
         padding: 0.5rem;
@@ -171,7 +219,7 @@ main h2 {
     }
 }
 
-/* Table*/
+/* Tabelle*/
 
 /* Allgemeine Tabellen-Stile */
 .table-block1 {
@@ -180,10 +228,8 @@ main h2 {
 
 .table-block1 h1 {
     margin-bottom: 20px;
-    /* Größerer Abstand zwischen Überschrift und Tabelle */
 }
 
-/* Tabellenkopf grün mit weißer Schrift */
 .table thead th {
     background-color: #4D5C1C;
     color: white !important;
@@ -200,11 +246,8 @@ main h2 {
     padding: 12px;
     border: 1px solid #ddd;
     width: 33.33%;
-    /* Alle Spalten gleich breit */
     text-align: center;
-    /* Horizontale Zentrierung */
     vertical-align: middle;
-    /* Vertikale Zentrierung */
 }
 
 /* Sortierbare Spalten mit Hover-Effekt */
@@ -224,7 +267,7 @@ th {
 /* Filter-Popup */
 .filter-popup {
     position: absolute;
-    background: rgba(255, 255, 255);
+    background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 16px;
     padding: 15px;
@@ -267,7 +310,6 @@ th {
 }
 
 
-
 /* Footer */
 
 .custom-footer {
@@ -284,21 +326,14 @@ th {
     font-size: 1.5rem;
 }
 
-
 /* Social Media Icons */
 .custom-footer .social-icons a {
-    color: white !important;
-    /* Stellt sicher, dass die Icons weiß sind */
+    color: white;
     font-size: 28px;
     margin: 0 15px;
     display: inline-block;
     transition: color 0.3s ease-in-out;
     text-decoration: none;
-}
-
-/* Direkt die Icon-Elemente ansprechen, um Farbe zu erzwingen */
-.custom-footer .social-icons a i {
-    color: white;
 }
 
 /* Hover-Effekt für Social Media Icons */

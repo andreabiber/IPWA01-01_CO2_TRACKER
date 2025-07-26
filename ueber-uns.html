@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über uns - CO₂ Tracker</title>
+    <meta name="description"
+        content="Lerne das Team und die Vision hinter CO₂ Tracker kennen. Warum wir die Plattform entwickelt haben – und was uns antreibt.">
+
+    <!-- Favicon: Mini-Logo im Browser-Tab -->
+    <link rel="icon" href="../assets/logo_co2_tracker.svg?v=2" type="image/svg+xml">
+
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Eigene CSS-Datei -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#localNav" data-bs-offset="100">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center pe-1" href="../index.html">
+                <img src="../assets/logo_co2_tracker.svg" alt="CO₂ Tracker Logo" width="40" height="40"
+                    class="d-inline-block">
+                <span>CO₂ Tracker</span>
+            </a>
+            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Navigation öffnen">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">CO₂ Tracker</h5>
+                    <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="offcanvas"
+                        aria-label="Navigation schließen"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <!-- Platzhalter-Links (href="#") ggf. ersetzen -->
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="../index.html">Startseite</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 active" aria-current="page" href="ueber-uns.html">Über uns</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="neuigkeiten.html">Neuigkeiten</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="projekte.html">Projekte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="kontakt.html">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Ende Navbar -->
+
+    <main>
+        <!-- Hero Section mit lokaler Navigation-->
+        <section class="hero-section">
+            <div class="hero-container container-fluid d-flex justify-content-between align-items-center p-4">
+                <nav id="localNav" class="local-nav nav flex-column bg-white p-3 rounded shadow"
+                    aria-label="Navigation innerhalb der Seite">
+                    <a class="nav-link" href="#team">Team</a>
+                    <a class="nav-link" href="#entstehung">Entstehung</a>
+                    <a class="nav-link" href="#vision">Vision</a>
+                </nav>
+                <div class="hero-text text-white p-3">
+                    <h1 class="fs-1">Über uns</h1>
+                    <p class="fs-5">Wer steht hinter dem CO₂ Tracker und was treibt uns an?</p>
+                </div>
+            </div>
+        </section>
+        <!-- Ende Hero Section -->
+
+        <!-- Über uns -->
+        <section id="team" class="container my-5">
+            <h2>Team</h2>
+            <p class="text-justify">
+                Hinter dem CO₂ Tracker steht ein engagiertes Team aus Fachleuten mit unterschiedlichen Hintergründen –
+                von
+                Umweltwissenschaften über Softwareentwicklung bis hin zu Design und Kommunikation. Gemeinsam arbeiten
+                wir
+                daran, innovative Lösungen zu schaffen, die Nachhaltigkeit fördern und einen echten Beitrag zum
+                Klimaschutz
+                leisten.
+            </p>
+        </section>
+
+        <section id="entstehung" class="container my-5">
+            <h2>Entstehung</h2>
+            <p class="text-justify">
+                Die Idee für CO₂ Tracker entstand im Rahmen eines interdisziplinären Projekts, bei dem wir uns intensiv
+                mit
+                den Ursachen und Auswirkungen des Klimawandels auseinandergesetzt haben. Im Laufe unserer Recherchen
+                stellten wir fest, dass Informationen über CO₂-Emissionen zwar vorhanden, aber oft unübersichtlich,
+                unvollständig oder schwer zugänglich sind. Besonders für die breite Öffentlichkeit fehlte es an
+                verständlich
+                aufbereiteten Daten, die transparent zeigen, welche Länder und Unternehmen maßgeblich zum globalen
+                CO₂-Ausstoß beitragen.</p>
+            <p class="text-justify">Diese Erkenntnis bildete den Ausgangspunkt für die Entwicklung unserer
+                Webanwendung. Unser Ziel war es, eine
+                Plattform zu schaffen, die verlässliche Emissionsdaten übersichtlich darstellt und dadurch ein
+                Bewusstsein
+                für die reale Klimabelastung schafft. Durch den klar strukturierten Aufbau und die visuelle Aufbereitung
+                sollen Nutzerinnen und Nutzer auf einfache Weise nachvollziehen können, wo die größten Emissionen
+                entstehen.
+                Die technische Umsetzung erfolgte im Rahmen eines Studienprojekts, bei dem konzeptionelle,
+                gestalterische
+                und programmiertechnische Kompetenzen gebündelt wurden.</p>
+            <p class="text-justify">CO₂ Tracker ist somit das Ergebnis einer gemeinsamen Initiative, die
+                datenbasierte Klimakommunikation
+                fördern und langfristig zur gesellschaftlichen und politischen Veränderung beitragen möchte.</p>
+        </section>
+
+        <section id="vision" class="container my-5">
+            <h2>Vision</h2>
+            <p class="text-justify">
+                Unsere Vision ist es, mit CO₂ Tracker eine digitale Plattform zu etablieren, die für mehr
+                Klimatransparenz
+                sorgt und fundiertes Wissen über CO₂-Emissionen allgemein zugänglich macht. Der Klimawandel betrifft
+                jeden
+                Menschen auf der Welt, doch die Verantwortung für die Emissionen ist ungleich verteilt. Genau hier
+                möchten
+                wir ansetzen: durch eine klare, vergleichbare Darstellung der Emissionswerte soll sichtbar werden, wer
+                welchen Beitrag zur Erderwärmung leistet.</p>
+            <p class="text-justify">Langfristig wollen wir nicht nur Informationen bereitstellen, sondern auch
+                Handlungsspielräume aufzeigen.
+                Wir sind überzeugt, dass fundiertes Wissen die Grundlage für gesellschaftliches Engagement und
+                politische
+                Veränderung bildet. CO₂ Tracker richtet sich daher sowohl an umweltbewusste Bürgerinnen und Bürger als
+                auch
+                an Entscheidungsträgerinnen und Entscheidungsträger, Journalistinnen und Journalisten sowie
+                Bildungsinstitutionen.</p>
+            <p class="text-justify">Wir verstehen die Plattform als Werkzeug zur Aufklärung, aber auch als
+                Anstoß
+                zur Eigenverantwortung. Denn
+                nur wer die Ursachen kennt, kann die richtigen Konsequenzen ziehen. Unsere Vision ist eine informierte
+                Gesellschaft, die auf Basis transparenter Daten gemeinsam an einer klimafreundlicheren Zukunft arbeitet.
+            </p>
+        </section>
+    </main>
+    <!-- Ende Über uns -->
+
+
+    <!-- Footer -->
+    <footer class="custom-footer text-white pt-4 pb-4">
+        <div class="container text-center">
+
+            <!-- Erste Zeile: Kontaktdaten -->
+            <p class="mb-1">
+                CO₂ Tracker | Klimastraße 101 | 89039 Köln | 08557 238491247 |
+                <a href="mailto:contact@co2tracker.de">contact@co2tracker.de</a>
+            </p>
+
+            <!-- Zweite Zeile: Impressum/Datenschutz -->
+            <ul class="list-inline mb-3">
+                <li class="list-inline-item"><a href="impressum.html" class="footer-link">Impressum</a></li>
+                <li class="list-inline-item">|</li>
+                <li class="list-inline-item"><a href="datenschutz.html" class="footer-link">Datenschutz</a></li>
+            </ul>
+
+            <!-- Dritte Zeile: Social Media Icons -->
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+
+            <!-- Trennlinie -->
+            <hr class="footer-line">
+            <div class="row align-items-center">
+
+                <!-- Copyright-Zeile -->
+                <div class="copyright">
+                    <p>Copyright © 2025 CO₂ Tracker. Alle Rechte vorbehalten.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Ende Footer -->
+
+    <!-- Bootstrap JavaScript Bundle (inkl. Popper)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- meine JS-Datei -->
+    <script src="../scripts/userlanguage.js"></script>
+
+</body>
+
+</html>

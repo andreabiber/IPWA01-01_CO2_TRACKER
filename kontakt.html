@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CO₂ Tracker</title>
+    <title>Kontakt - CO₂ Tracker</title>
     <meta name="description"
-        content="Erfahren Sie, wie CO₂ Tracker Transparenz über Emissionen schafft und wer weltweit die größten Verursacher sind.">
+        content="Du hast Fragen oder Feedback? Hier findest du unser Kontaktformular sowie häufig gestellte Fragen rund um CO₂ Tracker.">
 
     <!-- Favicon: Mini-Logo im Browser-Tab -->
-    <link rel="icon" href="assets/logo_co2_tracker.svg?v=2" type="image/svg+xml">
+    <link rel="icon" href="../assets/logo_co2_tracker.svg?v=2" type="image/svg+xml">
 
     <!-- Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -19,15 +19,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
     <!-- Eigene CSS-Datei -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#localNav" data-bs-offset="100">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center pe-1" href="index.html">
-                <img src="assets/logo_co2_tracker.svg" alt="CO₂ Tracker Logo" width="40" height="40"
+            <a class="navbar-brand d-flex align-items-center pe-1" href="../index.html">
+                <img src="../assets/logo_co2_tracker.svg" alt="CO₂ Tracker Logo" width="40" height="40"
                     class="d-inline-block">
                 <span>CO₂ Tracker</span>
             </a>
@@ -38,26 +38,27 @@
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title ms-0" id="offcanvasNavbarLabel">CO₂ Tracker</h5>
-                    <button type="button" class="btn-close me-0" data-bs-dismiss="offcanvas"
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">CO₂ Tracker</h5>
+                    <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="offcanvas"
                         aria-label="Navigation schließen"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <!-- Platzhalter-Links (href="#") ggf. ersetzen -->
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2 active" aria-current="page" href="index.html">Startseite</a>
+                            <a class="nav-link mx-lg-2" href="../index.html">Startseite</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="sites/ueber-uns.html">Über uns</a>
+                            <a class="nav-link mx-lg-2" href="ueber-uns.html">Über uns</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="sites/neuigkeiten.html">Neuigkeiten</a>
+                            <a class="nav-link mx-lg-2" href="neuigkeiten.html">Neuigkeiten</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="sites/projekte.html">Projekte</a>
+                            <a class="nav-link mx-lg-2" href="projekte.html">Projekte</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="sites/kontakt.html">Kontakt</a>
+                            <a class="nav-link mx-lg-2 active" aria-current="page" href="kontakt.html">Kontakt</a>
                         </li>
                     </ul>
                 </div>
@@ -66,84 +67,83 @@
     </nav>
     <!-- Ende Navbar -->
 
-
     <main>
         <!-- Hero Section mit lokaler Navigation-->
         <section class="hero-section">
             <div class="hero-container container-fluid d-flex justify-content-between align-items-center p-4">
                 <nav id="localNav" class="local-nav nav flex-column bg-white p-3 rounded shadow"
                     aria-label="Navigation innerhalb der Seite">
-                    <a class="nav-link" href="#table">Tabelle CO₂-Ausstoß</a>
-                    <a class="nav-link" href="#klimawandel">Folgen des Klimawandels</a>
+                    <a class="nav-link" href="#kontaktformular">Kontaktformular</a>
+                    <a class="nav-link" href="#fragen">Häufige Fragen (FAQ)</a>
                 </nav>
                 <div class="hero-text text-white p-3">
-                    <h1 class="fs-1">Wer stößt wie viel CO₂ aus?</h1>
-                    <p class="fs-5">Finde heraus, welche Länder und Unternehmen am meisten CO₂ ausstoßen.</p>
+                    <h1 class="fs-1">Kontakt</h1>
+                    <p class="fs-5">Wir freuen uns, von dir zu hören – ob Fragen, Anregungen oder Interesse am
+                        Austausch.
+                    </p>
                 </div>
             </div>
         </section>
         <!-- Ende Hero Section -->
 
-        <!-- Tabelle -->
-        <div id="table" class="table-block1 container-fluid py-5">
-            <h1>Größte Unternehmen weltweit nach ihrem CO₂-Ausstoß</h1>
+        <!-- Kontakt -->
+        <section id="kontaktformular" class="container my-5">
+            <h1>Kontaktformular</h1>
+            <p>Du möchtest mit uns in Kontakt treten?</p>
+            <p class="text-justify">Unser Kontaktformular wird derzeit noch umgesetzt. In Kürze steht es dir hier zur
+                Verfügung, damit du uns bequem eine Nachricht senden kannst. Bis dahin bitten wir um etwas Geduld.</p>
+        </section>
 
-            <div class="table-responsive">
-                <table id="emissionsTable" class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Land</th>
-                            <th>Unternehmen</th>
-                            <th>Emissionen (in Mio. Tonnen)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Tabelle wird dynamisch erzeugt - JavaScript -->
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <!-- Ende Tabelle -->
+        <section id="fragen" class="container my-5">
+            <h2 class="mb-4">Häufige Fragen (FAQ)</h2>
+            <p class="text-justify">In unserem FAQ-Bereich beantworten wir die häufigsten Fragen rund um CO₂
+                Tracker. Solltest du dort keine passende Antwort finden, kannst du uns jederzeit per E-Mail und bald
+                auch über das Kontaktformular
+                kontaktieren.</p>
 
-        <!-- Folgen des Klimawandels -->
-        <section id="klimawandel" class="container my-5">
-            <h1>Folgen des Klimawandels</h1>
-            <p class="text-justify"> Die Auswirkungen des weltweiten CO₂-Ausstoßes sind längst sichtbar und
-                betreffen Mensch und Natur gleichermaßen. Steigende Durchschnittstemperaturen, häufigere
-                Extremwetterereignisse wie Dürren, Überschwemmungen oder Hitzewellen sowie das Abschmelzen von
-                Gletschern und Polkappen gehören zu den
-                gravierendsten Folgen des Klimawandels. Auch die Ozeane erwärmen sich und versauern zunehmend, was ganze
-                Ökosysteme bedroht.</p>
-            <p class="text-justify">Die sozialen und wirtschaftlichen Konsequenzen sind ebenso dramatisch:
-                Ernteausfälle, Wassermangel,
-                Gesundheitsrisiken und klimabedingte Migration nehmen zu. Besonders stark betroffen sind Regionen, die
-                ohnehin unter prekären Bedingungen leben – obwohl sie oft am wenigsten zur globalen Emission beigetragen
-                haben. </p>
-            <p class="text-justify">Mit CO₂ Tracker möchten wir dazu beitragen, diese Zusammenhänge sichtbar zu
-                machen. Nur wer versteht, wer
-                wie viel CO₂ ausstößt, kann Verantwortung übernehmen und Veränderung einfordern.</p>
+            <h3 class="mt-5 mb-3">Fragen & Antworten</h3>
+
+            <p><strong>Wie aktuell sind die Emissionsdaten auf CO₂ Tracker?</strong></p>
+            <p class="text-justify">Unsere Daten basieren auf öffentlich zugänglichen Quellen und werden
+                regelmäßig manuell aktualisiert. Da es sich bei CO₂ Tracker um ein Studienprojekt handelt, können
+                kleinere Abweichungen vorkommen.</p>
+
+            <p><strong>Warum werden manche Länder oder Unternehmen nicht angezeigt?</strong></p>
+            <p class="text-justify">Wir konzentrieren uns derzeit auf eine begrenzte Auswahl, um die Darstellung
+                übersichtlich zu halten. Die Auswahl basiert auf dem Emissionsvolumen und der Verfügbarkeit von Daten.
+            </p>
+
+            <p><strong>Kann ich meine eigenen Daten zur Plattform beitragen?</strong></p>
+            <p class="text-justify">Derzeit ist das nicht vorgesehen. In zukünftigen Versionen könnten
+                partizipative Funktionen jedoch ergänzt
+                werden.</p>
+
+            <p><strong>Ist die Nutzung der Seite kostenlos?</strong></p>
+            <p class="text-justify">Ja, CO₂ Tracker ist ein gemeinnütziges Projekt und vollständig kostenfrei
+                nutzbar.</p>
         </section>
     </main>
-    <!-- Ende Folgen des Klimawandels -->
+    <!-- Ende Kontakt -->
+
 
     <!-- Footer -->
     <footer class="custom-footer text-white pt-4 pb-4">
         <div class="container text-center">
 
-            <!-- Kontaktdaten -->
+            <!-- Erste Zeile: Kontaktdaten -->
             <p class="mb-1">
                 CO₂ Tracker | Klimastraße 101 | 89039 Köln | 08557 238491247 |
                 <a href="mailto:contact@co2tracker.de">contact@co2tracker.de</a>
             </p>
 
-            <!-- Impressum/Datenschutz -->
+            <!-- Zweite Zeile: Impressum/Datenschutz -->
             <ul class="list-inline mb-3">
-                <li class="list-inline-item"><a href="./sites/impressum.html" class="footer-link">Impressum</a></li>
+                <li class="list-inline-item"><a href="impressum.html" class="footer-link">Impressum</a></li>
                 <li class="list-inline-item">|</li>
-                <li class="list-inline-item"><a href="./sites/datenschutz.html" class="footer-link">Datenschutz</a></li>
+                <li class="list-inline-item"><a href="datenschutz.html" class="footer-link">Datenschutz</a></li>
             </ul>
 
-            <!-- Social Media Icons -->
+            <!-- Dritte Zeile: Social Media Icons -->
             <div class="social-icons">
                 <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                     <i class="bi bi-facebook"></i>
@@ -158,6 +158,7 @@
 
             <!-- Trennlinie -->
             <hr class="footer-line">
+
             <div class="row align-items-center">
 
                 <!-- Copyright-Zeile -->
@@ -176,8 +177,7 @@
         crossorigin="anonymous"></script>
 
     <!-- meine JS-Datei -->
-    <script src="scripts/table.js"></script>
-    <script src="scripts/userlanguage.js"></script>
+    <script src="../scripts/userlanguage.js"></script>
 
 </body>
 
