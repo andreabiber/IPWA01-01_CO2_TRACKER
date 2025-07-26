@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
     loadTableData();
     setupSorting();
@@ -8,7 +7,7 @@ let selectedFilters = { land: new Set(), unternehmen: new Set() };
 
 async function loadTableData() {
     try {
-        const response = await fetch("../assets/table.json");
+        const response = await fetch("assets/table.json");
 
         if (!response.ok) {
             throw new Error(`HTTP-Fehler: ${response.status}`);
@@ -96,7 +95,7 @@ function sortTable(columnIndex, order) {
 function setupFilters(data) {
     const filters = ["land", "unternehmen"];
     const tableHeaders = document.querySelectorAll("#emissionsTable thead th");
-    
+
     filters.forEach((filter, index) => {
         const header = tableHeaders[index];
         const filterButton = document.createElement("span");
@@ -121,7 +120,7 @@ function showFilterPopup(event, filterKey, data, triggerElement) {
     popup.style.padding = "10px";
     popup.style.boxShadow = "0px 4px 6px rgba(0,0,0,0.1)";
     popup.style.zIndex = "1000";
-    
+
     const rect = triggerElement.getBoundingClientRect();
     popup.style.left = `${rect.left}px`;
     popup.style.top = `${rect.top + window.scrollY + triggerElement.offsetHeight}px`;
@@ -161,13 +160,14 @@ function showFilterPopup(event, filterKey, data, triggerElement) {
 
     popup.appendChild(resetButton);
     document.body.appendChild(popup);
+    document.removeEventListener("click", closeFilterPopup);
     setTimeout(() => document.addEventListener("click", closeFilterPopup), 0);
 }
 
 function closeFilterPopup(event) {
-    if (!event || !document.querySelector(".filter-popup").contains(event.target)) {
-        const existingPopup = document.querySelector(".filter-popup");
-        if (existingPopup) existingPopup.remove();
+    const popup = document.querySelector(".filter-popup");
+    if (!event || !popup || !popup.contains(event.target)) {
+        if (popup) popup.remove();
         document.removeEventListener("click", closeFilterPopup);
     }
 }

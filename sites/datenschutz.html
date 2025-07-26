@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CO₂ Tracker</title>
+    <title>Datenschutz - CO₂ Tracker</title>
+    <meta name="description"
+        content="Hier findest du alle Informationen zur Verarbeitung deiner Daten auf CO₂ Tracker – transparent und DSGVO-konform.">
 
     <!-- Favicon: Mini-Logo im Browser-Tab -->
     <link rel="icon" href="../assets/logo_co2_tracker.svg?v=2" type="image/svg+xml">
@@ -20,7 +22,7 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#localNav" data-bs-offset="100" tabindex="0">
+<body data-bs-spy="scroll" data-bs-target="#localNav" data-bs-offset="100">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md fixed-top">
         <div class="container-fluid">
@@ -47,16 +49,16 @@
                             <a class="nav-link mx-lg-2" href="../index.html">Startseite</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">Über uns</a>
+                            <a class="nav-link mx-lg-2" href="ueber-uns.html">Über uns</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">Neuigkeiten</a>
+                            <a class="nav-link mx-lg-2" href="neuigkeiten.html">Neuigkeiten</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">Projekte</a>
+                            <a class="nav-link mx-lg-2" href="projekte.html">Projekte</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">Kontakt</a>
+                            <a class="nav-link mx-lg-2" href="kontakt.html">Kontakt</a>
                         </li>
                     </ul>
                 </div>
@@ -65,78 +67,84 @@
     </nav>
     <!-- Ende Navbar -->
 
-    <!-- Hero Section mit lokaler Navigation-->
-    <section class="hero-section">
-        <div class="hero-container container-fluid d-flex justify-content-between align-items-center p-4">
-            <nav id="localNav" class="local-nav nav flex-column bg-white p-3 rounded shadow">
-                <a class="nav-link active" href="#datenschutz">Datenschutzerklärung</a>
-            </nav>
-            <div class="hero-text text-white p-3">
-                <h1 class="fs-1">Datenschutz</h1>
-                <p class="fs-5">Transparenz über die Erhebung und Verwendung Ihrer Daten</p>
+    <main>
+        <!-- Hero Section mit lokaler Navigation-->
+        <section class="hero-section">
+            <div class="hero-container container-fluid d-flex justify-content-between align-items-center p-4">
+                <nav id="localNav" class="local-nav nav flex-column bg-white p-3 rounded shadow"
+                    aria-label="Navigation innerhalb der Seite">
+                    <a class="nav-link" href="#datenschutz">Datenschutzerklärung</a>
+                </nav>
+                <div class="hero-text text-white p-3">
+                    <h1 class="fs-1">Datenschutz</h1>
+                    <p class="fs-5">Transparenz über die Erhebung und Verwendung Ihrer Daten</p>
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- Ende Hero Section -->
+        </section>
+        <!-- Ende Hero Section -->
 
-    <!-- Datenschutzerklärung -->
-    <main id="datenschutz" class="container my-5">
-        <h1>Datenschutzerklärung</h1>
+        <!-- Datenschutzerklärung -->
+        <section id="datenschutz" class="container my-5">
+            <h1>Datenschutzerklärung</h1>
 
-        <p>Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten Ihre Daten daher
-            ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TMG).</p>
+            <p>Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten Ihre Daten daher
+                ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TMG).</p>
 
-        <h2>1. Allgemeines</h2>
-        <p>Diese Datenschutzerklärung informiert Sie über die Art, den Umfang und den Zweck der Erhebung und Verwendung
-            personenbezogener Daten auf dieser Website.</p>
+            <h2>1. Allgemeines</h2>
+            <p>Diese Datenschutzerklärung informiert Sie über die Art, den Umfang und den Zweck der Erhebung und
+                Verwendung
+                personenbezogener Daten auf dieser Website.</p>
 
-        <h2>2. Verantwortlicher</h2>
-        <p>
-            Verantwortlich für die Datenverarbeitung auf dieser Website ist:<br>
-            CO₂ Tracker<br>
-            Klimastraße 101<br>
-            89039 Köln<br>
-            E-Mail: <a href="mailto:contact@co2tracker.de">contact@co2tracker.de</a>
-        </p>
+            <h2>2. Verantwortlicher</h2>
+            <p>
+                Verantwortlich für die Datenverarbeitung auf dieser Website ist:<br>
+                CO₂ Tracker<br>
+                Klimastraße 101<br>
+                89039 Köln<br>
+                E-Mail: <a href="mailto:contact@co2tracker.de">contact@co2tracker.de</a>
+            </p>
 
-        <h2>3. Zugriffsdaten (Server-Logs)</h2>
-        <p>Beim Besuch dieser Website speichern wir standardmäßig folgende Daten in Server-Logfiles:</p>
-        <ul>
-            <li>IP-Adresse (anonymisiert)</li>
-            <li>Datum und Uhrzeit des Zugriffs</li>
-            <li>Besuchte Seite/Datei</li>
-            <li>Browsertyp und -version</li>
-            <li>Betriebssystem</li>
-            <li>Referrer-URL</li>
-        </ul>
-        <p>Diese Daten dienen ausschließlich der Sicherstellung des technischen Betriebs und zur statistischen
-            Auswertung.</p>
+            <h2>3. Zugriffsdaten (Server-Logs)</h2>
+            <p>Beim Besuch dieser Website speichern wir standardmäßig folgende Daten in Server-Logfiles:</p>
+            <ul>
+                <li>IP-Adresse (anonymisiert)</li>
+                <li>Datum und Uhrzeit des Zugriffs</li>
+                <li>Besuchte Seite/Datei</li>
+                <li>Browsertyp und -version</li>
+                <li>Betriebssystem</li>
+                <li>Referrer-URL</li>
+            </ul>
+            <p>Diese Daten dienen ausschließlich der Sicherstellung des technischen Betriebs und zur statistischen
+                Auswertung.</p>
 
-        <h2>4. Verwendung von Cookies</h2>
-        <p>Unsere Website verwendet keine Cookies zur Nutzerverfolgung oder -analyse.</p>
+            <h2>4. Verwendung von Cookies</h2>
+            <p>Unsere Website verwendet keine Cookies zur Nutzerverfolgung oder -analyse.</p>
 
-        <h2>5. Eingebettete Inhalte und externe Dienste</h2>
-        <p>Diese Seite bindet ggf. externe Inhalte wie Social-Media-Icons oder Schriftarten (z. B. von Bootstrap oder
-            Google) ein. Dabei kann es zur Übertragung von Daten an Dritte kommen (z. B. IP-Adresse).</p>
+            <h2>5. Eingebettete Inhalte und externe Dienste</h2>
+            <p>Diese Seite bindet ggf. externe Inhalte wie Social-Media-Icons oder Schriftarten (z. B. von Bootstrap
+                oder
+                Google) ein. Dabei kann es zur Übertragung von Daten an Dritte kommen (z. B. IP-Adresse).</p>
 
-        <h2>6. Ihre Rechte</h2>
-        <p>Sie haben jederzeit das Recht auf:</p>
-        <ul>
-            <li>Auskunft über Ihre gespeicherten Daten</li>
-            <li>Berichtigung unrichtiger Daten</li>
-            <li>Löschung (sofern nicht gesetzlich notwendig)</li>
-            <li>Einschränkung der Verarbeitung</li>
-            <li>Datenübertragbarkeit</li>
-            <li>Widerspruch gegen die Verarbeitung</li>
-        </ul>
+            <h2>6. Ihre Rechte</h2>
+            <p>Sie haben jederzeit das Recht auf:</p>
+            <ul>
+                <li>Auskunft über Ihre gespeicherten Daten</li>
+                <li>Berichtigung unrichtiger Daten</li>
+                <li>Löschung (sofern nicht gesetzlich notwendig)</li>
+                <li>Einschränkung der Verarbeitung</li>
+                <li>Datenübertragbarkeit</li>
+                <li>Widerspruch gegen die Verarbeitung</li>
+            </ul>
 
-        <p>Bitte richten Sie Ihre Anfrage an: <a href="mailto:contact@co2tracker.de">contact@co2tracker.de</a></p>
+            <p>Bitte richten Sie Ihre Anfrage an: <a href="mailto:contact@co2tracker.de">contact@co2tracker.de</a></p>
 
-        <h2>7. Änderungen dieser Datenschutzerklärung</h2>
-        <p>Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen, etwa bei neuen gesetzlichen Vorgaben
-            oder technischen Änderungen.</p>
+            <h2>7. Änderungen dieser Datenschutzerklärung</h2>
+            <p>Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen, etwa bei neuen gesetzlichen
+                Vorgaben
+                oder technischen Änderungen.</p>
 
-        <p>Stand: April 2025</p>
+            <p>Stand: April 2025</p>
+        </section>
     </main>
     <!-- Ende Datenschutzerklärung -->
 
@@ -146,27 +154,28 @@
 
             <!-- Erste Zeile: Kontaktdaten -->
             <p class="mb-1">
-                CO₂ Tracker | Klimastraße 101 | 89039 Köln | 08557 238491247 | contact@co2tracker.de
+                CO₂ Tracker | Klimastraße 101 | 89039 Köln | 08557 238491247 |
+                <a href="mailto:contact@co2tracker.de">contact@co2tracker.de</a>
             </p>
 
             <!-- Zweite Zeile: Impressum/Datenschutz -->
-            <p class="mb-3">
-                <a href="impressum.html" class="footer-link">Impressum</a> |
-                <a href="datenschutz.html" class="footer-link fw-bold text-decoration-underline">Datenschutz</a>
-            </p>
+            <ul class="list-inline mb-3">
+                <li class="list-inline-item"><a href="impressum.html" class="footer-link">Impressum</a></li>
+                <li class="list-inline-item">|</li>
+                <li class="list-inline-item"><a href="datenschutz.html" class="footer-link">Datenschutz</a></li>
+            </ul>
 
             <!-- Dritte Zeile: Social Media Icons -->
             <div class="social-icons">
-                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                     <i class="bi bi-facebook"></i>
                 </a>
-                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <i class="bi bi-linkedin"></i>
                 </a>
-                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                     <i class="bi bi-instagram"></i>
                 </a>
-
             </div>
 
             <!-- Trennlinie -->

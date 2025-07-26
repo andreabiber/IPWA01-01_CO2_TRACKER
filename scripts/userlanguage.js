@@ -1,4 +1,3 @@
-
 const rtlLangs = [
     "ar",  // Arabisch
     "fa",  // Persisch
@@ -20,6 +19,6 @@ if (rtlLangs.includes(baseLang)) {
     document.documentElement.dir = 'ltr';
 }
 
-/* Debug-Ausgabe: Richtung in der Konsole anzeigen -> für Programmierer*/
+/* Debug-Ausgabe: Richtung in der Konsole anzeigen*/
 console.log(`Sprache erkannt: ${baseLang}, Richtung: ${document.documentElement.dir}`);
 
